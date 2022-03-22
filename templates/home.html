@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adult Census </title>
+</head>
+ <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> ADULT INCOME PREDICTION </h1><br>
+
+        <form method="POST", action="{{url_for('home')}}">
+           <b>
+               AGE :<input type="text" name="a"  placeholder="Age"><br><br>
+               FNWEIGHT:<input type="text" name="b" placeholder="FNWeiht"><br><br>
+               EDUCATION-NUMBER :<input type="text" name="c"  placeholder="Edu_Num"><br><br>
+               HOURS-PER-WEEK: <input type="text" name="d"  placeholder="Hoursperweek"><br><br>
+               NET-CAPITAL-LOSS-GAIN : <input type="text" name="e" placeholder="Net_capitalGorL"><br><br>
+               WORKCLASS {'State-gov':7, 'Self-emp-not-inc':6, 'Private':4, 'Federal-gov':1,'Local-gov':2, '
+               ?':0, 'Self-emp-inc':5, 'Without-pay':8,'Never-worked':3}:<input type="text" name="f"  placeholder="WorkClass" ><br><br>
+               MARITAL-STATUS{'Never-married':4, 'Married-civ-spouse':2, 'Divorced':0,'Married-spouse-absent':3, 'Separated':5, 'Married-AF-spouse':1,'Widowed':6}:<input type="text" name="g" placeholder="MaritalStatus" ><br><br>
+               RACE {'Black' :2, 'White' :4 , 'Asian-Pac-Islander' : 1  ,  'Amer-Indian-Eskimo' : 0 ,'Other' :3}:<input type="text" name="h" placeholder="Race" ><br><br>
+               SEX {'Male':1,'Female':0} : <input type="text" name="i" placeholder="Sex" ><br><br><br><br>
+
+               <input type="submit" , value='predict!' >
+           </b>
+        </form>
+
+
+
+    </center>
+
+    </body>
+</html>
